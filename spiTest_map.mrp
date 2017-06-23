@@ -1,0 +1,397 @@
+Release 8.2i Map I.31
+Xilinx Mapping Report File for Design 'spiTest'
+
+Design Information
+------------------
+Command Line   : C:\Xilinx\bin\nt\map.exe -ise D:/varun2/spiTest/spiTest.ise
+-intstyle ise -p xc3s400-pq208-5 -cm area -pr b -k 4 -c 100 -o spiTest_map.ncd
+spiTest.ngd spiTest.pcf 
+Target Device  : xc3s400
+Target Package : pq208
+Target Speed   : -5
+Mapper Version : spartan3 -- $Revision: 1.34.32.1 $
+Mapped Date    : Wed Jun 21 10:34:06 2017
+
+Design Summary
+--------------
+Number of errors:      0
+Number of warnings:   57
+Logic Utilization:
+  Total Number Slice Registers:        34 out of   7,168    1%
+    Number used as Flip Flops:                    32
+    Number used as Latches:                        2
+  Number of 4 input LUTs:             176 out of   7,168    2%
+Logic Distribution:
+  Number of occupied Slices:                          137 out of   3,584    3%
+    Number of Slices containing only related logic:     137 out of     137  100%
+    Number of Slices containing unrelated logic:          0 out of     137    0%
+      *See NOTES below for an explanation of the effects of unrelated logic
+Total Number 4 input LUTs:            265 out of   7,168    3%
+  Number used as logic:                176
+  Number used as a route-thru:          89
+  Number of bonded IOBs:               78 out of     141   55%
+    IOB Latches:                       57
+  Number of GCLKs:                     1 out of       8   12%
+
+Total equivalent gate count for design:  2,283
+Additional JTAG gate count for IOBs:  3,744
+Peak Memory Usage:  139 MB
+
+NOTES:
+
+   Related logic is defined as being logic that shares connectivity - e.g. two
+   LUTs are "related" if they share common inputs.  When assembling slices,
+   Map gives priority to combine logic that is related.  Doing so results in
+   the best timing performance.
+
+   Unrelated logic shares no connectivity.  Map will only begin packing
+   unrelated logic into a slice once 99% of the slices are occupied through
+   related logic packing.
+
+   Note that once logic distribution reaches the 99% level through related
+   logic packing, this does not mean the device is completely utilized.
+   Unrelated logic packing will then begin, continuing until all usable LUTs
+   and FFs are occupied.  Depending on your timing budget, increased levels of
+   unrelated logic packing may adversely affect the overall timing performance
+   of your design.
+
+Table of Contents
+-----------------
+Section 1 - Errors
+Section 2 - Warnings
+Section 3 - Informational
+Section 4 - Removed Logic Summary
+Section 5 - Removed Logic
+Section 6 - IOB Properties
+Section 7 - RPMs
+Section 8 - Guide Report
+Section 9 - Area Group and Partition Summary
+Section 10 - Modular Design Summary
+Section 11 - Timing Report
+Section 12 - Configuration String Information
+
+Section 1 - Errors
+------------------
+
+Section 2 - Warnings
+--------------------
+WARNING:PhysDesignRules:372 - Gated clock. Clock net _cmp_lt0000 is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net _cmp_eq0019 is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net _cmp_eq0020 is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net _cmp_eq0021 is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net _cmp_eq0022 is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net _cmp_eq0023 is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net _cmp_eq0024 is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net _cmp_eq0025 is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net _cmp_eq0026 is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net _cmp_eq0027 is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net _cmp_eq0028 is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net _cmp_eq0029 is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net _cmp_eq0030 is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net _cmp_eq0033 is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net _cmp_eq0031 is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net _cmp_eq0035 is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net _cmp_eq0032 is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net _cmp_eq0037 is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net _cmp_eq0043 is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net _cmp_eq0034 is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net _cmp_eq0039 is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net _cmp_eq0045 is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net _cmp_eq0036 is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net _cmp_eq0041 is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net _cmp_eq0047 is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net _cmp_eq0053 is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net _cmp_eq0038 is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net _cmp_eq0044 is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net _cmp_eq0049 is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net _cmp_eq0055 is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net _cmp_eq0040 is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net _cmp_eq0046 is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net _cmp_eq0051 is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net _cmp_eq0000 is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net _cmp_eq0007 is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net _cmp_eq0042 is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net _cmp_eq0048 is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net _cmp_eq0054 is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net _cmp_eq0002 is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net _cmp_eq0009 is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net _cmp_eq0050 is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net _cmp_eq0056 is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net _cmp_eq0005 is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net _cmp_eq0011 is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net _cmp_eq0052 is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net _cmp_eq0001 is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net _cmp_eq0008 is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net _cmp_eq0013 is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net _cmp_eq0003 is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net _cmp_eq0010 is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net _cmp_eq0015 is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net _cmp_eq0006 is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net _cmp_eq0012 is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net _cmp_eq0017 is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net _cmp_eq0014 is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net _cmp_eq0018 is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net _cmp_eq0016 is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+
+Section 3 - Informational
+-------------------------
+INFO:MapLib:562 - No environment variables are currently set.
+INFO:MapLib:535 - The following Virtex BUFG(s) is/are being retargetted to
+   Virtex2 BUFGMUX(s) with input tied to I0 and Select pin tied to constant 0:
+   BUFGP symbol "clock_BUFGP" (output signal=clock_BUFGP)
+INFO:LIT:244 - All of the single ended outputs in this design are using slew
+   rate limited output drivers. The delay on speed critical single ended outputs
+   can be dramatically reduced by designating them as fast outputs in the
+   schematic.
+
+Section 4 - Removed Logic Summary
+---------------------------------
+   2 block(s) optimized away
+
+Section 5 - Removed Logic
+-------------------------
+
+Optimized Block(s):
+TYPE 		BLOCK
+GND 		XST_GND
+VCC 		XST_VCC
+
+To enable printing of redundant blocks removed and signals merged, set the
+detailed map report option and rerun map.
+
+Section 6 - IOB Properties
+--------------------------
+
++------------------------------------------------------------------------------------------------------------------------+
+| IOB Name                           | Type    | Direction | IO Standard | Drive    | Slew | Reg (s)  | Resistor | IOB   |
+|                                    |         |           |             | Strength | Rate |          |          | Delay |
++------------------------------------------------------------------------------------------------------------------------+
+| CLK                                | IOB     | OUTPUT    | LVCMOS25    | 12       | SLOW |          |          |       |
+| RXBuf<1>                           | IOB     | OUTPUT    | LVCMOS25    | 12       | SLOW | OLATCH1  |          |       |
+| RXBuf<2>                           | IOB     | OUTPUT    | LVCMOS25    | 12       | SLOW | OLATCH1  |          |       |
+| RXBuf<3>                           | IOB     | OUTPUT    | LVCMOS25    | 12       | SLOW | OLATCH1  |          |       |
+| RXBuf<4>                           | IOB     | OUTPUT    | LVCMOS25    | 12       | SLOW | OLATCH1  |          |       |
+| RXBuf<5>                           | IOB     | OUTPUT    | LVCMOS25    | 12       | SLOW | OLATCH1  |          |       |
+| RXBuf<6>                           | IOB     | OUTPUT    | LVCMOS25    | 12       | SLOW | OLATCH1  |          |       |
+| RXBuf<7>                           | IOB     | OUTPUT    | LVCMOS25    | 12       | SLOW | OLATCH1  |          |       |
+| RXBuf<8>                           | IOB     | OUTPUT    | LVCMOS25    | 12       | SLOW | OLATCH1  |          |       |
+| RXBuf<9>                           | IOB     | OUTPUT    | LVCMOS25    | 12       | SLOW | OLATCH1  |          |       |
+| RXBuf<10>                          | IOB     | OUTPUT    | LVCMOS25    | 12       | SLOW | OLATCH1  |          |       |
+| RXBuf<11>                          | IOB     | OUTPUT    | LVCMOS25    | 12       | SLOW | OLATCH1  |          |       |
+| RXBuf<12>                          | IOB     | OUTPUT    | LVCMOS25    | 12       | SLOW | OLATCH1  |          |       |
+| RXBuf<13>                          | IOB     | OUTPUT    | LVCMOS25    | 12       | SLOW | OLATCH1  |          |       |
+| RXBuf<14>                          | IOB     | OUTPUT    | LVCMOS25    | 12       | SLOW | OLATCH1  |          |       |
+| RXBuf<15>                          | IOB     | OUTPUT    | LVCMOS25    | 12       | SLOW | OLATCH1  |          |       |
+| RXBuf<16>                          | IOB     | OUTPUT    | LVCMOS25    | 12       | SLOW | OLATCH1  |          |       |
+| RXBuf<17>                          | IOB     | OUTPUT    | LVCMOS25    | 12       | SLOW | OLATCH1  |          |       |
+| RXBuf<18>                          | IOB     | OUTPUT    | LVCMOS25    | 12       | SLOW | OLATCH1  |          |       |
+| RXBuf<19>                          | IOB     | OUTPUT    | LVCMOS25    | 12       | SLOW | OLATCH1  |          |       |
+| RXBuf<20>                          | IOB     | OUTPUT    | LVCMOS25    | 12       | SLOW | OLATCH1  |          |       |
+| RXBuf<21>                          | IOB     | OUTPUT    | LVCMOS25    | 12       | SLOW | OLATCH1  |          |       |
+| RXBuf<22>                          | IOB     | OUTPUT    | LVCMOS25    | 12       | SLOW | OLATCH1  |          |       |
+| RXBuf<23>                          | IOB     | OUTPUT    | LVCMOS25    | 12       | SLOW | OLATCH1  |          |       |
+| RXBuf<24>                          | IOB     | OUTPUT    | LVCMOS25    | 12       | SLOW | OLATCH1  |          |       |
+| RXBuf<25>                          | IOB     | OUTPUT    | LVCMOS25    | 12       | SLOW | OLATCH1  |          |       |
+| RXBuf<26>                          | IOB     | OUTPUT    | LVCMOS25    | 12       | SLOW | OLATCH1  |          |       |
+| RXBuf<27>                          | IOB     | OUTPUT    | LVCMOS25    | 12       | SLOW | OLATCH1  |          |       |
+| RXBuf<28>                          | IOB     | OUTPUT    | LVCMOS25    | 12       | SLOW | OLATCH1  |          |       |
+| RXBuf<29>                          | IOB     | OUTPUT    | LVCMOS25    | 12       | SLOW | OLATCH1  |          |       |
+| RXBuf<30>                          | IOB     | OUTPUT    | LVCMOS25    | 12       | SLOW | OLATCH1  |          |       |
+| RXBuf<31>                          | IOB     | OUTPUT    | LVCMOS25    | 12       | SLOW | OLATCH1  |          |       |
+| RXBuf<32>                          | IOB     | OUTPUT    | LVCMOS25    | 12       | SLOW | OLATCH1  |          |       |
+| RXBuf<33>                          | IOB     | OUTPUT    | LVCMOS25    | 12       | SLOW | OLATCH1  |          |       |
+| RXBuf<34>                          | IOB     | OUTPUT    | LVCMOS25    | 12       | SLOW | OLATCH1  |          |       |
+| RXBuf<35>                          | IOB     | OUTPUT    | LVCMOS25    | 12       | SLOW | OLATCH1  |          |       |
+| RXBuf<36>                          | IOB     | OUTPUT    | LVCMOS25    | 12       | SLOW | OLATCH1  |          |       |
+| RXBuf<37>                          | IOB     | OUTPUT    | LVCMOS25    | 12       | SLOW | OLATCH1  |          |       |
+| RXBuf<38>                          | IOB     | OUTPUT    | LVCMOS25    | 12       | SLOW | OLATCH1  |          |       |
+| RXBuf<39>                          | IOB     | OUTPUT    | LVCMOS25    | 12       | SLOW | OLATCH1  |          |       |
+| RXBuf<40>                          | IOB     | OUTPUT    | LVCMOS25    | 12       | SLOW | OLATCH1  |          |       |
+| RXBuf<41>                          | IOB     | OUTPUT    | LVCMOS25    | 12       | SLOW | OLATCH1  |          |       |
+| RXBuf<42>                          | IOB     | OUTPUT    | LVCMOS25    | 12       | SLOW | OLATCH1  |          |       |
+| RXBuf<43>                          | IOB     | OUTPUT    | LVCMOS25    | 12       | SLOW | OLATCH1  |          |       |
+| RXBuf<44>                          | IOB     | OUTPUT    | LVCMOS25    | 12       | SLOW | OLATCH1  |          |       |
+| RXBuf<45>                          | IOB     | OUTPUT    | LVCMOS25    | 12       | SLOW | OLATCH1  |          |       |
+| RXBuf<46>                          | IOB     | OUTPUT    | LVCMOS25    | 12       | SLOW | OLATCH1  |          |       |
+| RXBuf<47>                          | IOB     | OUTPUT    | LVCMOS25    | 12       | SLOW | OLATCH1  |          |       |
+| RXBuf<48>                          | IOB     | OUTPUT    | LVCMOS25    | 12       | SLOW | OLATCH1  |          |       |
+| RXBuf<49>                          | IOB     | OUTPUT    | LVCMOS25    | 12       | SLOW | OLATCH1  |          |       |
+| RXBuf<50>                          | IOB     | OUTPUT    | LVCMOS25    | 12       | SLOW | OLATCH1  |          |       |
+| RXBuf<51>                          | IOB     | OUTPUT    | LVCMOS25    | 12       | SLOW | OLATCH1  |          |       |
+| RXBuf<52>                          | IOB     | OUTPUT    | LVCMOS25    | 12       | SLOW | OLATCH1  |          |       |
+| RXBuf<53>                          | IOB     | OUTPUT    | LVCMOS25    | 12       | SLOW | OLATCH1  |          |       |
+| RXBuf<54>                          | IOB     | OUTPUT    | LVCMOS25    | 12       | SLOW | OLATCH1  |          |       |
+| RXBuf<55>                          | IOB     | OUTPUT    | LVCMOS25    | 12       | SLOW | OLATCH1  |          |       |
+| RXBuf<56>                          | IOB     | OUTPUT    | LVCMOS25    | 12       | SLOW | OLATCH1  |          |       |
+| SCLK                               | IOB     | OUTPUT    | LVCMOS25    | 12       | SLOW |          |          |       |
+| SMISO                              | IOB     | INPUT     | LVCMOS25    |          |      |          |          |       |
+| SMOSI                              | IOB     | OUTPUT    | LVCMOS25    | 12       | SLOW | OLATCH1  |          |       |
+| TXBuf<1>                           | IOB     | OUTPUT    | LVCMOS25    | 12       | SLOW |          |          |       |
+| TXBuf<2>                           | IOB     | OUTPUT    | LVCMOS25    | 12       | SLOW |          |          |       |
+| TXBuf<3>                           | IOB     | OUTPUT    | LVCMOS25    | 12       | SLOW |          |          |       |
+| TXBuf<4>                           | IOB     | OUTPUT    | LVCMOS25    | 12       | SLOW |          |          |       |
+| TXBuf<5>                           | IOB     | OUTPUT    | LVCMOS25    | 12       | SLOW |          |          |       |
+| TXBuf<6>                           | IOB     | OUTPUT    | LVCMOS25    | 12       | SLOW |          |          |       |
+| TXBuf<7>                           | IOB     | OUTPUT    | LVCMOS25    | 12       | SLOW |          |          |       |
+| TXBuf<8>                           | IOB     | OUTPUT    | LVCMOS25    | 12       | SLOW |          |          |       |
+| TXBuf<9>                           | IOB     | OUTPUT    | LVCMOS25    | 12       | SLOW |          |          |       |
+| TXBuf<10>                          | IOB     | OUTPUT    | LVCMOS25    | 12       | SLOW |          |          |       |
+| TXBuf<11>                          | IOB     | OUTPUT    | LVCMOS25    | 12       | SLOW |          |          |       |
+| TXBuf<12>                          | IOB     | OUTPUT    | LVCMOS25    | 12       | SLOW |          |          |       |
+| TXBuf<13>                          | IOB     | OUTPUT    | LVCMOS25    | 12       | SLOW |          |          |       |
+| TXBuf<14>                          | IOB     | OUTPUT    | LVCMOS25    | 12       | SLOW |          |          |       |
+| TXBuf<15>                          | IOB     | OUTPUT    | LVCMOS25    | 12       | SLOW |          |          |       |
+| TXBuf<16>                          | IOB     | OUTPUT    | LVCMOS25    | 12       | SLOW |          |          |       |
+| clock                              | IOB     | INPUT     | LVCMOS25    |          |      |          |          |       |
+| nSCS                               | IOB     | OUTPUT    | LVCMOS25    | 12       | SLOW |          |          |       |
++------------------------------------------------------------------------------------------------------------------------+
+
+Section 7 - RPMs
+----------------
+
+Section 8 - Guide Report
+------------------------
+Guide not run on this design.
+
+Section 9 - Area Group and Partition Summary
+--------------------------------------------
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Area Group Information
+----------------------
+
+  No area groups were found in this design.
+
+----------------------
+
+Section 10 - Modular Design Summary
+-----------------------------------
+Modular Design not used for this design.
+
+Section 11 - Timing Report
+--------------------------
+This design was not run using timing mode.
+
+Section 12 - Configuration String Details
+-----------------------------------------
+Use the "-detail" map option to print out Configuration Strings

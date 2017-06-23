@@ -1,0 +1,35 @@
+Release 8.2i - xst I.31
+Copyright (c) 1995-2006 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to ./xst/projnav.tmp
+CPU : 0.00 / 0.44 s | Elapsed : 0.00 / 1.00 s
+ 
+--> 
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "D:/varun2/spiTest/spiTest.vhd" in Library work.
+Entity <spitest> compiled.
+ERROR:HDLParsers:164 - "D:/varun2/spiTest/spiTest.vhd" Line 48. parse error, unexpected IDENTIFIER
+ERROR:HDLParsers:3312 - "D:/varun2/spiTest/spiTest.vhd" Line 49. Undefined symbol 'BYTE'.
+ERROR:HDLParsers:1209 - "D:/varun2/spiTest/spiTest.vhd" Line 49. BYTE: Undefined symbol (last report in this block)
+ERROR:HDLParsers:164 - "D:/varun2/spiTest/spiTest.vhd" Line 50. parse error, unexpected VARIABLE, expecting AFFECT or SEMICOLON
+ERROR:HDLParsers:3345 - "D:/varun2/spiTest/spiTest.vhd" Line 50.  Only SHARED variables can be declared here.
+ERROR:HDLParsers:3312 - "D:/varun2/spiTest/spiTest.vhd" Line 132. Undefined symbol 'TXData'.
+ERROR:HDLParsers:1209 - "D:/varun2/spiTest/spiTest.vhd" Line 132. TXData: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "D:/varun2/spiTest/spiTest.vhd" Line 153. Undefined symbol 'RXData'.
+ERROR:HDLParsers:1209 - "D:/varun2/spiTest/spiTest.vhd" Line 153. RXData: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "D:/varun2/spiTest/spiTest.vhd" Line 157. Undefined symbol 'terminateFlag'.
+ERROR:HDLParsers:808 - "D:/varun2/spiTest/spiTest.vhd" Line 163. = can not have such operands in this context.
+ERROR:HDLParsers:164 - "D:/varun2/spiTest/spiTest.vhd" Line 163. parse error, unexpected THEN, expecting COMMA or CLOSEPAR
+ERROR:HDLParsers:1209 - "D:/varun2/spiTest/spiTest.vhd" Line 183. terminateFlag: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3402 - "D:/varun2/spiTest/spiTest.vhd" Line 183. Read symbol =, expecting <= or := 
+CPU : 0.20 / 0.64 s | Elapsed : 0.00 / 1.00 s
+ 
+--> 
+
+Total memory usage is 106644 kilobytes
+
+Number of errors   :   14 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

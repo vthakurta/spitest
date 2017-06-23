@@ -1,0 +1,163 @@
+Release 8.2i - xst I.31
+Copyright (c) 1995-2006 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to ./xst/projnav.tmp
+CPU : 0.00 / 0.47 s | Elapsed : 0.00 / 0.00 s
+ 
+--> Parameter xsthdpdir set to ./xst
+CPU : 0.00 / 0.47 s | Elapsed : 0.00 / 0.00 s
+ 
+--> Reading design: spiTest.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+     9.1) Device utilization summary
+     9.2) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "spiTest.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "spiTest"
+Output Format                      : NGC
+Target Device                      : xc3s400-5-pq208
+
+---- Source Options
+Top Module Name                    : spiTest
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+FSM Style                          : lut
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : YES
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : YES
+Resource Sharing                   : YES
+Multiplier Style                   : auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 8
+Register Duplication               : YES
+Slice Packing                      : YES
+Pack IO Registers into IOBs        : auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : NO
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Write Timing Constraints           : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : maintain
+Slice Utilization Ratio            : 100
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+lso                                : spiTest.lso
+Read Cores                         : YES
+cross_clock_analysis               : NO
+verilog2001                        : YES
+safe_implementation                : No
+Optimize Instantiated Primitives   : NO
+use_clock_enable                   : Yes
+use_sync_set                       : Yes
+use_sync_reset                     : Yes
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "D:/varun2/spiTest/spiTest.vhd" in Library work.
+Architecture behavioral of Entity spitest is up to date.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <spiTest> in library <work> (architecture <behavioral>).
+
+Building hierarchy successfully finished.
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <spiTest> in library <work> (Architecture <behavioral>).
+WARNING:Xst:1960 - "D:/varun2/spiTest/spiTest.vhd" line 54: Potential simulation mismatch, variable <masterClockDivider> declared in block <$PROCESS1> is assigned in block <timerInit>.
+WARNING:Xst:1960 - "D:/varun2/spiTest/spiTest.vhd" line 62: Potential simulation mismatch, variable <masterClockDivider> declared in block <$PROCESS1> is assigned in block <timeCritical>.
+WARNING:Xst:1960 - "D:/varun2/spiTest/spiTest.vhd" line 64: Potential simulation mismatch, variable <masterClockDivider> declared in block <$PROCESS1> is assigned in block <timeCritical>.
+WARNING:Xst:1960 - "D:/varun2/spiTest/spiTest.vhd" line 90: Potential simulation mismatch, variable <sizeofTXBuf> declared in block <spiTest> is assigned in block <initVariables>.
+WARNING:Xst:1960 - "D:/varun2/spiTest/spiTest.vhd" line 91: Potential simulation mismatch, variable <sizeofRXBuf> declared in block <spiTest> is assigned in block <initVariables>.
+WARNING:Xst:1960 - "D:/varun2/spiTest/spiTest.vhd" line 93: Potential simulation mismatch, variable <transition> declared in block <spiTest> is assigned in block <initVariables>.
+WARNING:Xst:1960 - "D:/varun2/spiTest/spiTest.vhd" line 96: Potential simulation mismatch, variable <c> declared in block <spiTest> is assigned in block <initVariables>.
+WARNING:Xst:1960 - "D:/varun2/spiTest/spiTest.vhd" line 98: Potential simulation mismatch, variable <initFlag> declared in block <spiTest> is assigned in block <initVariables>.
+WARNING:Xst:1960 - "D:/varun2/spiTest/spiTest.vhd" line 99: Potential simulation mismatch, variable <receiveFlag> declared in block <spiTest> is assigned in block <initVariables>.
+WARNING:Xst:1960 - "D:/varun2/spiTest/spiTest.vhd" line 100: Potential simulation mismatch, variable <transmitFlag> declared in block <spiTest> is assigned in block <initVariables>.
+WARNING:Xst:1960 - "D:/varun2/spiTest/spiTest.vhd" line 101: Potential simulation mismatch, variable <transition> declared in block <spiTest> is assigned in block <initVariables>.
+WARNING:Xst:1960 - "D:/varun2/spiTest/spiTest.vhd" line 102: Potential simulation mismatch, variable <repeatFlag> declared in block <spiTest> is assigned in block <initVariables>.
+WARNING:Xst:1960 - "D:/varun2/spiTest/spiTest.vhd" line 103: Potential simulation mismatch, variable <t> declared in block <spiTest> is assigned in block <initVariables>.
+WARNING:Xst:1960 - "D:/varun2/spiTest/spiTest.vhd" line 104: Potential simulation mismatch, variable <fg> declared in block <spiTest> is assigned in block <initVariables>.
+WARNING:Xst:1960 - "D:/varun2/spiTest/spiTest.vhd" line 112: Potential simulation mismatch, variable <initFlag> declared in block <spiTest> is assigned in block <chipSelect>.
+WARNING:Xst:1960 - "D:/varun2/spiTest/spiTest.vhd" line 113: Potential simulation mismatch, variable <receiveFlag> declared in block <spiTest> is assigned in block <chipSelect>.
+WARNING:Xst:1960 - "D:/varun2/spiTest/spiTest.vhd" line 114: Potential simulation mismatch, variable <transmitFlag> declared in block <spiTest> is assigned in block <chipSelect>.
+WARNING:Xst:1960 - "D:/varun2/spiTest/spiTest.vhd" line 115: Potential simulation mismatch, variable <repeatFlag> declared in block <spiTest> is assigned in block <chipSelect>.
+WARNING:Xst:1960 - "D:/varun2/spiTest/spiTest.vhd" line 172: Potential simulation mismatch, variable <c> declared in block <spiTest> is assigned in block <DataTransfer>.
+WARNING:Xst:1960 - "D:/varun2/spiTest/spiTest.vhd" line 123: Potential simulation mismatch, variable <transition> declared in block <spiTest> is assigned in block <generateSCLK>.
+WARNING:Xst:1960 - "D:/varun2/spiTest/spiTest.vhd" line 126: Potential simulation mismatch, variable <c> declared in block <spiTest> is assigned in block <generateSCLK>.
+WARNING:Xst:1960 - "D:/varun2/spiTest/spiTest.vhd" line 148: Potential simulation mismatch, variable <sizeofTXBuf> declared in block <spiTest> is assigned in block <transmit>.
+WARNING:Xst:1960 - "D:/varun2/spiTest/spiTest.vhd" line 132: Potential simulation mismatch, variable <transmitFlag> declared in block <spiTest> is assigned in block <resetTX>.
+WARNING:Xst:1960 - "D:/varun2/spiTest/spiTest.vhd" line 134: Potential simulation mismatch, variable <sizeofTXBuf> declared in block <spiTest> is assigned in block <resetTX>.
+WARNING:Xst:1960 - "D:/varun2/spiTest/spiTest.vhd" line 150: Potential simulation mismatch, variable <t> declared in block <spiTest> is assigned in block <transmit>.
+WARNING:Xst:1960 - "D:/varun2/spiTest/spiTest.vhd" line 152: Potential simulation mismatch, variable <t> declared in block <spiTest> is assigned in block <transmit>.
+WARNING:Xst:1960 - "D:/varun2/spiTest/spiTest.vhd" line 160: Potential simulation mismatch, variable <sizeofRXBuf> declared in block <spiTest> is assigned in block <receive>.
+WARNING:Xst:1960 - "D:/varun2/spiTest/spiTest.vhd" line 162: Potential simulation mismatch, variable <receiveFlag> declared in block <spiTest> is assigned in block <receive>.
+WARNING:Xst:1960 - "D:/varun2/spiTest/spiTest.vhd" line 163: Potential simulation mismatch, variable <sizeofRXBuf> declared in block <spiTest> is assigned in block <receive>.
+WARNING:Xst:1960 - "D:/varun2/spiTest/spiTest.vhd" line 165: Potential simulation mismatch, variable <transition> declared in block <spiTest> is assigned in block <receive>.
+WARNING:Xst:1960 - "D:/varun2/spiTest/spiTest.vhd" line 206: Potential simulation mismatch, variable <initFlag> declared in block <spiTest> is assigned in block <Terminate>.
+WARNING:Xst:1960 - "D:/varun2/spiTest/spiTest.vhd" line 207: Potential simulation mismatch, variable <t1> declared in block <spiTest> is assigned in block <Terminate>.
+WARNING:Xst:1960 - "D:/varun2/spiTest/spiTest.vhd" line 182: Potential simulation mismatch, variable <t1> declared in block <spiTest> is assigned in block <chipDeSelect>.
+WARNING:Xst:1960 - "D:/varun2/spiTest/spiTest.vhd" line 185: Potential simulation mismatch, variable <c4> declared in block <spiTest> is assigned in block <chipDeSelect>.
+WARNING:Xst:1960 - "D:/varun2/spiTest/spiTest.vhd" line 186: Potential simulation mismatch, variable <fg> declared in block <spiTest> is assigned in block <chipDeSelect>.
+WARNING:Xst:1960 - "D:/varun2/spiTest/spiTest.vhd" line 190: Potential simulation mismatch, variable <c4> declared in block <spiTest> is assigned in block <chipDeSelect>.
+WARNING:Xst:1960 - "D:/varun2/spiTest/spiTest.vhd" line 192: Potential simulation mismatch, variable <repeatFlag> declared in block <spiTest> is assigned in block <chipDeSelect>.
+WARNING:Xst:1960 - "D:/varun2/spiTest/spiTest.vhd" line 193: Potential simulation mismatch, variable <initFlag> declared in block <spiTest> is assigned in block <chipDeSelect>.
+WARNING:Xst:1960 - "D:/varun2/spiTest/spiTest.vhd" line 194: Potential simulation mismatch, variable <t1> declared in block <spiTest> is assigned in block <chipDeSelect>.
+WARNING:Xst:1960 - "D:/varun2/spiTest/spiTest.vhd" line 195: Potential simulation mismatch, variable <fg> declared in block <spiTest> is assigned in block <chipDeSelect>.
+INFO:Xst:1304 - Contents of register <TXBuf> in unit <spiTest> never changes during circuit operation. The register is replaced by logic.
+INFO:Xst:1304 - Contents of register <SMISO> in unit <spiTest> never changes during circuit operation. The register is replaced by logic.
+ERROR:Xst:827 - "D:/varun2/spiTest/spiTest.vhd" line 49: Signal CLK cannot be synthesized, bad synchronous description.
+--> 
+
+Total memory usage is 108448 kilobytes
+
+Number of errors   :    1 (   0 filtered)
+Number of warnings :   40 (   0 filtered)
+Number of infos    :    2 (   0 filtered)
+

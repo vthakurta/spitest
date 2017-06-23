@@ -1,0 +1,11 @@
+[Inputs]
+SMISO
+clock
+[Outputs]
+SMOSI
+nSCS
+[BiDir]
+SCLK
+CLK
+=RXBuf[56:1]=
+=TXBuf[16:1]=

@@ -1,0 +1,18 @@
+xst -ise "D:/varun2/spiTest/spiTest.ise" -intstyle ise -ifn spiTest.xst -ofn spiTest.syr
+netgen -ise "D:/varun2/spiTest/spiTest.ise" -intstyle ise -ar Structure -tm spiTest -w -dir netgen/synthesis -ofmt vhdl -sim spiTest.ngc spiTest_synthesis.vhd
+ngdbuild -ise "D:/varun2/spiTest/spiTest.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s400-pq208-5 "spiTest.ngc" spiTest.ngd
+map -ise "D:/varun2/spiTest/spiTest.ise" -intstyle ise -p xc3s400-pq208-5 -cm area -pr b -k 4 -c 100 -o spiTest_map.ncd spiTest.ngd spiTest.pcf
+par -ise "D:/varun2/spiTest/spiTest.ise" -w -intstyle ise -ol std -t 1 spiTest_map.ncd spiTest.ncd spiTest.pcf
+trce -ise "D:/varun2/spiTest/spiTest.ise" -intstyle ise -e 3 -l 3 -s 5 -xml spiTest spiTest.ncd -o spiTest.twr spiTest.pcf
+netgen -ise "D:/varun2/spiTest/spiTest.ise" -intstyle ise -s 5 -pcf spiTest.pcf -rpw 100 -tpw 0 -ar Structure -tm spiTest -w -dir netgen/par -ofmt vhdl -sim spiTest.ncd spiTest_timesim.vhd
+xst -ise "D:/varun2/spiTest/spiTest.ise" -intstyle ise -ifn spiTest.xst -ofn spiTest.syr
+xst -ise "D:/varun2/spiTest/spiTest.ise" -intstyle ise -ifn spiTest.xst -ofn spiTest.syr
+netgen -ise "D:/varun2/spiTest/spiTest.ise" -intstyle ise -ar Structure -tm spiTest -w -dir netgen/synthesis -ofmt vhdl -sim spiTest.ngc spiTest_synthesis.vhd
+xst -ise "D:/varun2/spiTest/spiTest.ise" -intstyle ise -ifn spiTest.xst -ofn spiTest.syr
+xst -ise "D:/varun2/spiTest/spiTest.ise" -intstyle ise -ifn spiTest.xst -ofn spiTest.syr
+xst -ise "D:/varun2/spiTest/spiTest.ise" -intstyle ise -ifn spiTest.xst -ofn spiTest.syr
+xst -ise "D:/varun2/spiTest/spiTest.ise" -intstyle ise -ifn spiTest.xst -ofn spiTest.syr
+xst -ise "D:/varun2/spiTest/spiTest.ise" -intstyle ise -ifn spiTest.xst -ofn spiTest.syr
+xst -ise "D:/varun2/spiTest/spiTest.ise" -intstyle ise -ifn spiTest.xst -ofn spiTest.syr
+xst -ise "D:/varun2/spiTest/spiTest.ise" -intstyle ise -ifn spiTest.xst -ofn spiTest.syr
+xst -ise "D:/varun2/spiTest/spiTest.ise" -intstyle ise -ifn spiTest.xst -ofn spiTest.syr

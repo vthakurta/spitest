@@ -1,0 +1,48 @@
+--------------------------------------------------------------------------------
+Release 8.2i Trace 
+Copyright (c) 1995-2006 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\bin\nt\trce.exe -ise D:/varun2/spiTest/spiTest.ise -intstyle ise -e 3
+-l 3 -s 5 -xml spiTest spiTest.ncd -o spiTest.twr spiTest.pcf
+
+Design file:              spitest.ncd
+Physical constraint file: spitest.pcf
+Device,speed:             xc3s400,-5 (PRODUCTION 1.38 2006-05-03)
+Report level:             error report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Clock to Setup on destination clock clock
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clock          |    4.340|         |         |         |
+---------------+---------+---------+---------+---------+
+
+
+Analysis completed Wed Jun 21 10:34:47 2017
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 111 MB
+
+
+
